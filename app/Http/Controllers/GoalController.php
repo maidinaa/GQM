@@ -49,5 +49,10 @@ class GoalController extends Controller
     	return redirect ('/goal')->with('sukses','Data berhasil terhapus');
 	}
 	
-	
+	public function goal_question($id)
+    {
+    	$goal = \App\Goal::find($id);
+		return view('goal.goal_question',['goal' => $goal]);
+
+    }
 }

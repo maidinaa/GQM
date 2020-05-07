@@ -27,6 +27,7 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']],function(){
 		Route::get('/goal/{id}/edit','GoalController@edit');
 		Route::post('/goal/{id}/update','GoalController@update');
 		Route::get('/goal/{id}/delete','GoalController@delete');
+		Route::get('/goal/{id}/goal_question','GoalController@goal_question');
 
 		Route::get('/question', 'QuestionController@index');
 		Route::post('/question/create','QuestionController@create');

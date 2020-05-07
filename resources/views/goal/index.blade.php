@@ -33,7 +33,7 @@
 											@foreach($data_goal as $goal)
 											<tr>
 												<td>{{$goal->id}}</td>
-												<td>{{$goal->kode_goal}}</td>
+												<td><a href="/goal/{{$goal->id}}/goal_question">{{$goal->kode_goal}}</a></td>
 												<td>{{$goal->deskripsi_goal}}</td>
 												<td>
 													<a href="/goal/{{$goal->id}}/edit" class="button btn-warning btn-sm">Edit</a>
